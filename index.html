@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf's Steak House - Menu Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-placeholder img {
+            width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+
+        nav ul li a:hover {
+            color: #b11b1b;
+        }
+
+        .hero-section {
+            position: relative;
+            background: url('header.webp') no-repeat center center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .hero-overlay h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: 'Lora', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .menu-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .menu-option {
+            text-align: center;
+        }
+
+        .menu-option img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+          margin-top: 30px;
+        }
+
+        .menu-option h3 {
+            font-size: 1.5rem;
+            color: #b11b1b;
+            margin: 10px 0;
+        }
+
+        .menu-option p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .menu-option a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #b11b1b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+          margin-bottom: 70px;
+        }
+
+        .menu-option a:hover {
+            background-color: #a00a0a;
+        }
+    
+
+        footer {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 40px 0; /* Increased padding for a larger gap */
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #b11b1b;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://k3nzie8818.github.io/golfs-steakhouse-home/" class="logo-placeholder">
+            <img src="Golf's High Res Logo clear bkgd (2).avif" alt="Golf's Steak House Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Banquet Halls & Facilities</a></li>
+                <li><a href="#">Gift Certificates</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="https://www.opentable.ca/golfs-steak-house-and-seafood">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <h1>Explore Our Menus</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu-options">
+            <div class="menu-option">
+                <img src="brunch.webp" alt="Brunch Menu">
+                <h3>Brunch Menu</h3>
+                <p>Start your day with our delicious brunch options. From hearty omelets to fresh pastries, we have everything you need for the perfect morning meal.</p>
+                <a href="#">View Brunch Menu</a> <!-- Add brunch menu link here -->
+            </div>
+            <div class="menu-option">
+                <img src="dinner.webp" alt="Dinner Menu">
+                <h3>Dinner Menu</h3>
+                <p>Experience our exquisite dinner selections, featuring prime cuts, fresh seafood, and savory classics that will leave you satisfied.</p>
+                <a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/">View Dinner Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>598 Lancaster Street West, Kitchener, Ontario, Canada</p>
+        <p>(519) 579-4050</p>
+        <p>Open at 4 PM Daily (Office Open at 10 AM)</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Banquet Halls/Facilities</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Reservations</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
