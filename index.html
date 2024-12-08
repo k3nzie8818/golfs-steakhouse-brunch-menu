@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf's Steak House - Menu Options</title>
+    <title>Golf's Steak House Brunch Menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
@@ -57,7 +57,7 @@
 
         .hero-section {
             position: relative;
-            background: url('header.webp') no-repeat center center;
+            background: url('dessert.jpg') no-repeat center center;
             background-size: cover;
             height: 600px;
             display: flex;
@@ -88,63 +88,57 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
 
-        .menu-options {
+        .menu-section {
+            margin-top: 40px;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-family: 'Lora', serif;
+            border-bottom: 2px solid #b11b1b;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu-description {
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .menu-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
-            margin: 40px 0;
+            margin-top: 20px;
         }
 
-        .menu-option {
-            text-align: center;
-        }
-
-        .menu-option img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 15px;
-          margin-top: 30px;
-        }
-
-        .menu-option h3 {
-            font-size: 1.5rem;
-            color: #b11b1b;
-            margin: 10px 0;
-        }
-
-        .menu-option p {
+        .menu-item {
             font-size: 1rem;
             color: #555;
             line-height: 1.6;
         }
 
-        .menu-option a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #b11b1b;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-          margin-bottom: 70px;
+        .menu-item strong {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #b11b1b;
         }
 
-        .menu-option a:hover {
-            background-color: #a00a0a;
+        .menu-item p {
+            margin-bottom: 15px;
         }
-    
 
         footer {
             text-align: center;
             background-color: #f8f8f8;
-            padding: 40px 0; /* Increased padding for a larger gap */
+            padding: 40px 0;
             font-size: 0.9em;
             border-top: 1px solid #ddd;
         }
@@ -172,12 +166,16 @@
         footer p {
             margin: 10px 0;
         }
+
+        .menu-section:last-of-type {
+            margin-bottom: 80px; /* Gap before footer */
+        }
     </style>
 </head>
 <body>
     <header>
         <a href="https://k3nzie8818.github.io/golfs-steakhouse-home/" class="logo-placeholder">
-            <img src="Golf's High Res Logo clear bkgd (2).avif" alt="Golf's Steak House Logo">
+            <img src="Golf's High Res Logo clear bkgd.avif" alt="Golf's Steak House Logo">
         </a>
         <nav>
             <ul>
@@ -192,25 +190,82 @@
 
     <div class="hero-section">
         <div class="hero-overlay">
-            <h1>Explore Our Menus</h1>
+            <h1>Sunday Brunch</h1>
         </div>
     </div>
 
     <div class="container">
-        <div class="menu-options">
-            <div class="menu-option">
-                <img src="brunch.webp" alt="Brunch Menu">
-                <h3>Brunch Menu</h3>
-                <p>Start your day with our delicious brunch options. From hearty omelets to fresh pastries, we have everything you need for the perfect morning meal.</p>
-                <a href="#">View Brunch Menu</a> <!-- Add brunch menu link here -->
+        <section class="menu-section">
+            <h2>About Our Brunch</h2>
+            <p class="menu-description">
+                Enjoy a spectacular variety of Chef favorites such as hand-carved meats, fresh seafood, colorful salads, and delectable desserts.
+            </p>
+            <p class="menu-description">
+                <strong>Served every Sunday from 10:30 am to 3 pm</strong> (last seating at 2 pm).<br>
+                <strong>$39.95 per person for adults</strong><br>
+                <strong>$19.95 for guests 12 years of age and under</strong> (no charge for infants 3 years of age and under).<br>
+                <em>(Automatic gratuity charge of 15% added for tables of 8 and larger).</em>
+            </p>
+        </section>
+
+        <section class="menu-section">
+            <h2>What We Offer</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <strong>Carvery</strong>
+                    <p>Roast Prime Rib of Beef</p>
+                    <p>Roast Sirloin of Beef</p>
+                    <p>Old Fashioned Ham</p>
+                  
+                  <br> 
+                  <br>
+                  <br> 
+             
+
+                    <strong>Bread Table</strong>
+                    <p>Variety of loaves, danishes, croissants, rolls, cheeses, and accompanying jelly and jams</p>
+                  
+                  <br> 
+                  <br>
+                  <br>
+
+                    <strong>Dessert Table</strong>
+                    <p>Extensive 16-foot dessert table with a wide variety of cakes, mousses, pies, crumbles, and fresh fruits</p>
+                </div>
+                <div class="menu-item">
+                    <strong>Hot Items</strong>
+                    <p>Belgium Style Waffles</p>
+                    <p>Vegetarian Lasagna</p>
+                    <p>Seared White Fish</p>
+                    <p>Scrambled Eggs</p>
+                    <p>Pancakes</p>
+                    <p>French Toast</p>
+                    <p>Bacon</p>
+                    <p>Sausages</p>
+                    <p>Hand-cut Homefries</p>
+                    <p>Rice Pilaf</p>
+                    <p>Hashbrowns</p>
+                    <p>BBQ Beef Ribs</p>
+                    <p>Roast Ontario Chicken</p>
+                    <p>Fresh Vegetables</p>
+                </div>
+                <div class="menu-item">
+                    <strong>Salad Bar</strong>
+                    <p>Variety of colorful salads with dressings</p>
+                    <p>Iced Baby Shrimps</p>
+                    <p>Devilled Eggs</p>
+                    <p>Variety of fresh fruits and vegetables</p>
+                </div>
+                <div class="menu-item">
+                    <strong>Beverages</strong>
+                    <p>Apple, Orange, and Tomato Juices</p>
+                    <p>Coffee, Tea, Decaf</p>
+                    <p>Milk & Chocolate Milk</p>
+                    <p>Mocktails</p>
+                    <p>Fountain Soft Drinks</p>
+                </div>
             </div>
-            <div class="menu-option">
-                <img src="dinner.webp" alt="Dinner Menu">
-                <h3>Dinner Menu</h3>
-                <p>Experience our exquisite dinner selections, featuring prime cuts, fresh seafood, and savory classics that will leave you satisfied.</p>
-                <a href="https://k3nzie8818.github.io/golfs-steakhouse-menu/">View Dinner Menu</a>
-            </div>
-        </div>
+        </section>
     </div>
 
     <footer>
